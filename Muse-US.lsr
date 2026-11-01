@@ -1,0 +1,23 @@
+# NAME: Muse-US
+# DESCRIPTION: Meta Muse - US routing (complete, includes shared Meta/Facebook login infrastructure)
+# UPDATED: 2026-11-01
+# FORMAT: Loon Remote Rule; bind this rule set to a US-only policy group in Loon.
+# NOTE: The Facebook family below also routes regular Facebook traffic via the US policy.
+# NOTE: This affects device-to-Meta connections, not Muse Secure VM's server-side egress.
+
+# Muse web, app, AI services, secure VM and shared-content endpoints
+DOMAIN-SUFFIX,muse.ai
+DOMAIN-SUFFIX,museai.com
+DOMAIN-SUFFIX,meta.ai
+DOMAIN-SUFFIX,metaaivm.com
+DOMAIN-SUFFIX,ecto1.ai
+DOMAIN-SUFFIX,metaaiusercontent.com
+
+# Meta login and account-related services
+DOMAIN-SUFFIX,meta.com
+
+# Broader Meta / Facebook authentication and static resources
+DOMAIN-SUFFIX,facebook.com
+DOMAIN-SUFFIX,facebook.net
+DOMAIN-SUFFIX,fb.com
+DOMAIN-SUFFIX,fbcdn.net
